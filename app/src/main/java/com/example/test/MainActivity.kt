@@ -3,6 +3,7 @@ package com.example.test
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 
 class MainActivity : AppCompatActivity() {
 
@@ -30,6 +31,9 @@ class MainActivity : AppCompatActivity() {
 
     override fun onPause() {
         super.onPause()
+        text_view.visibility = View.VISIBLE
+        text_view
+
         Log.d(TAG, "onPause() called")
     }
 
