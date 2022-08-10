@@ -17,7 +17,7 @@
         android:layout_alignParentLeft="true"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:background="#2C59FD"
+        android:background="#2451F8"
         />
     <View
         android:id="@+id/greenView"
