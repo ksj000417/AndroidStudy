@@ -4,10 +4,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
     val TAG: String = "로그"
+
+
 
     // 액티비티가 생성되었을때
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,7 +35,7 @@ class MainActivity : AppCompatActivity() {
     override fun onPause() {
         super.onPause()
         text_view.visibility = View.VISIBLE
-        text_view
+        text_view.setText("onPause()")
 
         Log.d(TAG, "onPause() called")
     }
